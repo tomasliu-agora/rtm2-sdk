@@ -25,6 +25,8 @@ type rtmInvoker struct {
 
 	lg  *zap.Logger
 	cli rtm2.RTMClient
+
+	timeout time.Duration
 }
 
 func (i *rtmInvoker) onResponse(uri int32, errCode int32, message []byte) error {
@@ -162,7 +164,7 @@ func (i *rtmInvoker) receive(rc <-chan *Header) (*Header, error) {
 			return nil, rtm2.ErrorFromCode(h.ErrCode)
 		}
 		return h, nil
-	case <-time.After(time.Second * 5):
+	case <-time.After(i.timeout):
 		i.lg.Info("timeout")
 		return nil, ERR_TIMEOUT
 	}
@@ -267,6 +269,11 @@ func CreateRTM2Client(ctx context.Context, config rtm2.RTMConfig, errChan chan<-
 	c, cancel := context.WithCancel(ctx)
 	initLogger(&config)
 	inv := &rtmInvoker{ctx: c, cancel: cancel, sidecar: nil, lg: config.Logger, errorChan: errChan}
+	if config.RequestTimeout <= 0 {
+		inv.timeout = 5000 * time.Millisecond
+	} else {
+		inv.timeout = time.Duration(config.RequestTimeout) * time.Millisecond
+	}
 	cli := base.CreateRTMClient(ctx, config, inv)
 	inv.cli = cli
 	return cli
