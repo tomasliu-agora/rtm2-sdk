@@ -28,7 +28,7 @@
 ## 1. 导入模块
 
 ```go
-import "github.com/tomasliu-agora/rtm2"
+import "github.com/tomasliu-agora/rtm2/v2"
 ```
 
 ## 2. 初始化 RTM Client，并登录

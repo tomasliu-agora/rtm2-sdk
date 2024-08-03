@@ -6,8 +6,8 @@ require (
 	github.com/cloudwego/netpoll v0.2.4
 	github.com/golang/protobuf v1.5.3
 	github.com/tevino/abool/v2 v2.1.0
-	github.com/tomasliu-agora/rtm2 v0.0.2-0.20230925092527-8b3003f45e8b
-	github.com/tomasliu-agora/rtm2-base v0.0.0-20230925093936-d18f42643300
+	github.com/tomasliu-agora/rtm2-base/v2 v2.1.6-p2p
+	github.com/tomasliu-agora/rtm2/v2 v2.1.6-p2p
 	go.uber.org/zap v1.24.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 )

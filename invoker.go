@@ -4,13 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/tomasliu-agora/rtm2"
-	base "github.com/tomasliu-agora/rtm2-base"
+	"strings"
+	"time"
+
+	base "github.com/tomasliu-agora/rtm2-base/v2"
+	"github.com/tomasliu-agora/rtm2/v2"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"strings"
-	"time"
 )
 
 type rtmInvoker struct {

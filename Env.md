@@ -51,7 +51,7 @@ import (
         "go.uber.org/zap"
         "go.uber.org/zap/zapcore"
         "context"
-        "github.com/tomasliu-agora/rtm2"
+        "github.com/tomasliu-agora/rtm2/v2"
         sdk "github.com/tomasliu-agora/rtm2-sdk"
 )
 

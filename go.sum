@@ -29,10 +29,10 @@ github.com/stretchr/testify v1.8.0 h1:pSgiaMZlXftHpm5L7V1+rVB+AZJydKsMxsQBIJw4PK
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/tevino/abool/v2 v2.1.0 h1:7w+Vf9f/5gmKT4m4qkayb33/92M+Um45F2BkHOR+L/c=
 github.com/tevino/abool/v2 v2.1.0/go.mod h1:+Lmlqk6bHDWHqN1cbxqhwEAwMPXgc8I1SDEamtseuXY=
-github.com/tomasliu-agora/rtm2 v0.0.2-0.20230925092527-8b3003f45e8b h1:k2bbfychH/+VF92dts9M3wpSHCPpnIHvz2ElVOAce7g=
-github.com/tomasliu-agora/rtm2 v0.0.2-0.20230925092527-8b3003f45e8b/go.mod h1:DVdv0buAgna/tY/2cKk/6n4k7d+NIXQsaXeSlFuqW8I=
-github.com/tomasliu-agora/rtm2-base v0.0.0-20230925093936-d18f42643300 h1:yjkicNXmw9t2MmrrqjmxBAHISsnoZVpJ2lUWRQlmJSk=
-github.com/tomasliu-agora/rtm2-base v0.0.0-20230925093936-d18f42643300/go.mod h1:5sNq9Q0jQzHKdS5GRd75JnpavCDaej4TTTcdQajFJQk=
+github.com/tomasliu-agora/rtm2-base/v2 v2.1.6-p2p h1:b73IQYtiEANa6DCEHTdm4QLpQoAVM7Ru8GK0ep0Ywxo=
+github.com/tomasliu-agora/rtm2-base/v2 v2.1.6-p2p/go.mod h1:bLcxY5FhDrEblzGI3DwZ1Rp2wFpCJbERKBdV0iNFH1o=
+github.com/tomasliu-agora/rtm2/v2 v2.1.6-p2p h1:RckZN9iHZGoCRz7+9101Sh8vULC9ii9zd6bAqRGx5dA=
+github.com/tomasliu-agora/rtm2/v2 v2.1.6-p2p/go.mod h1:3mIMAiQ6uLm3LRAuw3afHsGHYg8L/IyL7TuBNfzJgfQ=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
 go.uber.org/atomic v1.7.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
 go.uber.org/atomic v1.9.0 h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE=

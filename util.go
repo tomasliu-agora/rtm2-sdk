@@ -1,6 +1,6 @@
 package rtm2_sdk
 
-import base "github.com/tomasliu-agora/rtm2-base"
+import base "github.com/tomasliu-agora/rtm2-base/v2"
 
 func generateHeader(uri int32, m Marshalable) *Header {
 	buffer, _ := m.Marshal()
