@@ -38,6 +38,13 @@ config := rtm2.RTMConfig{Appid: "<APP_ID>", UserId: "<RTM_USER_ID>", Logger: lg}
 ctx := context.Background()
 errChan := make(chan error, 1) // 接收错误消息，重建rtm2 client, 详情见此文档“异常场景处理”部分
 client := CreateRTM2Client(ctx, config, errChan)
+// 设置私有参数
+// golang_sidecar_path：sidecar.exe所在目录,  default(".")
+// golang_sidecar_port：sidecar.exe 绑定端口， go client与sidecar通过该端口通信 default(7001)
+client.SetParameters(map[string]interface{}{
+    "golang_sidecar_path": "/app",    
+    "golang_sidecar_port": int32(9001),
+})
 // 使用 <RTM_TOKEN> token 登录RTM
 // eventChan : 连接事件, 详情见此文档“异常场景处理”部分
 // tokenChan : token will expire事件，详情见此文档“异常场景处理”部分
